@@ -1,0 +1,6 @@
+Será criado uma aplicação limpa sem teste e sem os arquivos do Git
+
+ng new --minimal -g MeuProjeto
+
+escolher não para criar o roteamento do Angular
+usar a css como estilo.
