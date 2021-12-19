@@ -1,0 +1,22 @@
+Para gerar um novo componente.
+
+ng generate component NomeComponente
+
+pasta criar o componente dentro de uma pasta específica.
+
+ng generate component pasta/NomeComponente
+
+foi deletado o arquivo de css desse componente.
+
+Dentro do arquivo .ts nome-component.component precisa remover a linha
+styleUrls: ['./nome-componente.component.css'],
+pois como o arquivo de css não existe, se compilar irá gerar um erro.
+
+ou remove a linha, ou deixa o array vazio (styleUrls: [])
+
+um componente herdade da Interface OnInit,
+ por tanto é necessário implementar o método ngOnInit
+ 
+ Comando para criar um componente de forma simples
+ 
+ ng g c  (ng generate component)

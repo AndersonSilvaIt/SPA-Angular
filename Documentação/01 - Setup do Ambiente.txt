@@ -1,0 +1,13 @@
+Instalar o NodeJs na máquina.
+
+Instalar o NPM
+
+para instalar o NPM ou atualizar
+npm install npm@latest -g
+
+Quando for instalar um pacote do NPM, verificar se o mesmo não depende do JQuery,
+ 
+ pois tanto o Angular quando o JQuery já são Frameworks JS.
+ 
+
+ 

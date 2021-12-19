@@ -1,0 +1,17 @@
+Para criar um módulo
+
+ng g module Funcionalidade
+
+para gera um serviço
+
+ng g service Servico (Nome do Serviço)
+
+Será criado o arquivo servico.service.ts
+
+para registrar esse serviço, dentro de app.module.ts no providers é preciso informar esse servico.
+
+  providers: [
+    ServicoService
+  ],
+  
+  isso serve para injetar o serviço no construtor de alguma classe caso necessário.

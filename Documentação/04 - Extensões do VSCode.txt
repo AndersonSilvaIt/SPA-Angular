@@ -1,0 +1,9 @@
+Angular Console
+Angular Snipets
+Better Commands
+Debuger for Chrome
+npm
+npm insellisense
+vscode-icons
+
+Instalar no navegador o Angular Auguri, ajuda do Debug

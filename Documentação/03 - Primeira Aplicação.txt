@@ -1,0 +1,23 @@
+Entrar no diretório que quer criar o projeto usando o cmd
+
+Para criar o projeto, é recomendável usar o CMD, o PowerShell tem algumas restrições de segurança.
+
+Irá perguntar se deseja criar um arquivo de rotas escolher sim,
+
+Escolher o estilo que será utilizado, CSS, SASS, SCSS e etc ... escolhido o CSS padrão.
+
+Rodar a aplicação: basta entrar na pasta de rodar o comando
+
+basta rodar no terminal do vscode -> ctrl + '
+Comando:  ng serve / ng s
+
+Para rodar o projeto em modo de Produção (simula a produção)
+
+ng serve --prod  / ng s --prod
+
+para realizar o build do projeto 
+
+ng b / ng build
+
+para relizar o build em modo de produção:
+ng b --prod

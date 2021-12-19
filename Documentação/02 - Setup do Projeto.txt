@@ -1,0 +1,5 @@
+Angular CLI
+
+instalar o angular CLI
+
+npm install -g @angular/cli@8.3.14  (mesma versão que está sendo usada no curso)
