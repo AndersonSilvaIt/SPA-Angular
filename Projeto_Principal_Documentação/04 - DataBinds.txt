@@ -1,0 +1,53 @@
+Criado um componente para testar DataBinds
+
+ng g c demos/DataBinding
+
+implementado a rota do databinding no arquivo de rotas 
+app.routes.ts
+{ path: 'feature-data-binding', component: DataBindingComponent},
+no caso no menu será a opção "feature"
+
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/feature-data-binding']">Features</a>
+                </li>   
+				
+implementado uma variável no 		data-binding.component.ts
+		contadorClique
+e no HTML referente a esse  componente foi feito o uso dela, atravéz de databinding		
+    <p>O número de cliques é: {{ contadorClique}}</p>  (Interpolação)
+	
+Usando o Property Bind
+
+        <h3>Property Binding</h3>
+
+<button class="btn btn-info" [disabled]="contadorClique >= 10">Info</button>
+
+o [disable] é o angular que está tratando esse caso.
+
+
+Criado uma variável para a imagem
+
+    public urlImagem = "https://angular.io/assets/images/logos/angular/angular.svg";
+	
+	e usado também no html do componente.
+	<img [src]="urlImagem" height="50px" width="50px">
+	
+Impementado o Event Binds onde usa os eventos DOM do html, Click, Blur e etc ..
+
+
+<br><br><br>
+
+<input type="text" [ngModel]="nome" (ngModelChange)='nome = $event' placeholder="Digite seu nome">
+<br>
+<br>
+<label>Seu nome é: {{nome}} </label>
+
+para usar o ngModel é necessário importar um pacote.
+dentro de app.modules.ts
+import { FormsModule } from '@angular/forms';
+
+  imports: [
+    BrowserModule,
+    FormsModule,
+    [RouterModule.forRoot(rootRouterConfig, { useHash: false})]
+  ],
