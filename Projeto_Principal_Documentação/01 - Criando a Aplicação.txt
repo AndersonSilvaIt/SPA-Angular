@@ -4,3 +4,12 @@ ng new --minimal -g MeuProjeto
 
 escolher não para criar o roteamento do Angular
 usar a css como estilo.
+
+Frameworks de estilo.
+
+Bootstrap
+Angular Material
+
+O Bootstrap utiliza o JQuery e JavaScript
+
+Porém não pode misturar Angular com JQuery, pois ambos são frameworks JS.
