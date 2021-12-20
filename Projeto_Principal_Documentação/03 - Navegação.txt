@@ -1,0 +1,46 @@
+criado os componentes da barra institucional
+
+ng g c institucional/sobre
+ng g c institucional/contato
+
+criado o arquivo para a configuração de rotas
+
+app.routes.ts
+
+implementado as rodas do sistema,
+quando ele informar vazio, irá automaticamente redirecionar para home
+
+    { path: '', redirectTo: 'home', pathMatch: 'full'},
+    { path: 'home', component: HomeComponent},
+    { path: 'contato', component: ContatoComponent},
+    { path: 'sobre', component: SobreComponent}   
+	
+é necessário fazer a configuração das rotas no arquivo app.module.ts
+
+primeiro, importa o RouterModule do Angular
+import { RouterModule } from '@angular/router';
+
+e configurar o arquivo de rotas que foi implementado
+  imports: [
+    BrowserModule,
+    [RouterModule.forRoot(rootRouterConfig, { useHash: false})]
+  ],
+  
+
+foi gerado um erro de APP_BASE_HREF, para resolver é preciso importar essa biblioteca no app.modules.ts
+a configuração é feito dentro do providers
+
+  providers: [{
+     provide: APP_BASE_HREF, useValue: '/' 
+  }],
+  
+  para acontecer a navegação, no arquivo app.component.html é implementado a linha
+  <router-outlet></router-outlet>
+  essa linha nforma que a navegação ocorre nela, as outras partes irpa manter, o menu e o footer
+  
+  para informar os Href dos links <a> é informado da forma
+                      <a class="nav-link" [routerLink]="['/contato']">Contato</a>
+					  usando o routerLink
+					  
+					  o nome do routerLink precisa ser o mesmo nome colocado no arquivo de rotas
+					  /sobre   /contato  e etc
