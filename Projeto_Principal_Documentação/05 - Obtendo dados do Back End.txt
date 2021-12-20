@@ -1,0 +1,13 @@
+Instalar o pacote json server
+
+npm i json-server
+
+entrar no diretório da aplicação e instalar esse pacote
+
+Isso irá simular um servidor Back End
+
+Comando para iniciar o servidor
+
+json-server --watch produtos.json  (o nome do jason ou o caminho...)
+ Rodar a URL
+  http://localhost:3000/produtos
