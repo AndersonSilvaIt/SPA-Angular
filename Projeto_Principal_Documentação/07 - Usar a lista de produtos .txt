@@ -1,0 +1,22 @@
+Criado o componente para utilizar a listagem de produto obtida.
+
+ng g c produtos/ListaProduto
+
+Nas rotas, adicionados o caminho para a listagem de produtos.
+
+app.routes.ts
+
+criado o componente de listagem de produtos e nele é injetado o serviço para obter os dados
+e uma listagem de produtos para receber a lista.
+
+no html da listagem de produto é usado o ngFor, uma listagem ...
+
+para usar isso o ngFor, é necessário adicionar o módulo HttpClientModule dentro de app.modules.ts 
+também é necessário colocar nos Imports
+
+  imports: [
+    BrowserModule,
+    FormsModule,
+    HttpClientModule,
+    [RouterModule.forRoot(rootRouterConfig, { useHash: false})]
+  ],
