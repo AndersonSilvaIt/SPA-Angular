@@ -1,0 +1,21 @@
+ng g c navegacao/menu
+
+para não criar sempre um arquivo spec.ts e css quando criar um componente
+é possível realizar uma configuração.
+
+dentro de angular.json
+
+"schematics": {
+        "@schematics/angular:component" :{
+          "inlineStyle": true,
+          "spec": false
+        }
+}
+
+criar o component Home
+
+ng g c navegacao/home
+
+criar o footer (Rodapé)
+
+ng g c navegacao/footer

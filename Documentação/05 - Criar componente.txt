@@ -20,3 +20,6 @@ um componente herdade da Interface OnInit,
  Comando para criar um componente de forma simples
  
  ng g c  (ng generate component)
+ 
+ng g c Home
+ 
