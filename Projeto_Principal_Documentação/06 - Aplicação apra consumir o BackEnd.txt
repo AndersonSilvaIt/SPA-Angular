@@ -1,0 +1,6 @@
+Criado o serviço para consumir os dados de uma API
+
+automaticamente o angular injeta os serviços, porém precisa registrar esse serviço
+em app.modules.ts
+
+ProdutoService
